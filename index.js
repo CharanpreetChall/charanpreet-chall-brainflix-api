@@ -6,7 +6,7 @@ const cors = require("cors");
 const PORT = process.env.PORT ;
 
 //Middlewares
-app.use(express.static('public'))
+app.use(express.static('public'));
 app.use(express.json());
 app.use(cors());
 
