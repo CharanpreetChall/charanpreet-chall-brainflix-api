@@ -32,7 +32,7 @@ router.route("/")
             id: uuidv4(),
             title: req.body.title,
             channel: 'Ted Lasso',
-            image: "http://localhost:8080/images/image9.jpeg",
+            image: "PORT/images/image9.jpeg",
             description: req.body.description,
             views:"0",
             likes: "0",
