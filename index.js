@@ -6,14 +6,13 @@ const cors = require("cors");
 const PORT = process.env.PORT || 8080;
 
 //Middlewares
-app.use(express.static('public'))
+app.use(express.static('public'));
 app.use(express.json());
 app.use(cors());
 
 //Routes
 const videosRoutes= require('./routes/videos');
 app.use("/videos", videosRoutes)
-// app.use("/", router);
 
 
 //Listen
