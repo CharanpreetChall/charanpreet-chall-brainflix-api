@@ -12,11 +12,10 @@ app.use(cors());
 
 //Routes
 const videosRoutes= require('./routes/videos');
-app.use("/videos", videosRoutes)
+app.use('/videos', videosRoutes)
 
 
 //Listen
 app.listen(PORT, () => {
     console.log("server is running on port" + PORT)
 })
-
